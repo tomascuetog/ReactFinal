@@ -1,5 +1,5 @@
 import './styles/itemList.css'
-import Counter from './ItemCount';
+import ItemCount from './ItemCount';
  
 
 const ItemList = ({ product }) => {
@@ -9,7 +9,7 @@ const ItemList = ({ product }) => {
             <img src={product.img} alt="" />
             <h3>{product.name}</h3>
             <span>${product.price}</span>
-            <Counter sinStock="0" stock ={product.stock} />
+            <ItemCount sinStock="0" stock ={product.stock} />
         </div>
     
   );
